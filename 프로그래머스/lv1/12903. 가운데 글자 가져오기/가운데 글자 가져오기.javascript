@@ -1,6 +1,6 @@
 function solution(s) {
     var answer = '';
-    let len = s.length;
+    const len = s.length;
     
     const cal = Math.round((len / 2));
     
