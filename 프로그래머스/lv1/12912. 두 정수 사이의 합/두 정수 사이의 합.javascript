@@ -1,14 +1,11 @@
 function solution(a, b) {
     var answer = 0;
     
-    if(a <= b) {
-        for(let i = a; i <= b; i++) {
-            answer += i;
-        }
-    } else {
-        for(let i = a; i >= b; i--) {
-            answer += i;
-        }
+    let min = Math.min(a, b);
+    let max = Math.max(a, b);
+    
+    for(let i = min; i <= max; i++){
+        answer+=i;
     }
     
     return answer;
