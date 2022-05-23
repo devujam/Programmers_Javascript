@@ -14,6 +14,7 @@ function solution(id_list, report, k) {
             reportList[report_id].push(user_id)
         }        
     })
+    console.log(reportList)
     
     
     for(const key in reportList){
