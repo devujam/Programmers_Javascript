@@ -1,15 +1,11 @@
 function solution(A,B){
     var answer = 0;
-    let ASort = A.sort((a, b) => {
-        return a - b;
-    })
+    A.sort((a, b) => a - b)
     
-    let BSort = B.sort((a, b) => {
-        return b - a;
-    })
+    B.sort((a, b) => b - a)
     
     for(let i = 0; i < A.length; i++) {
-        answer += (ASort[i] * BSort[i])
+        answer += (A[i] * B[i])
     }
 
     return answer;
