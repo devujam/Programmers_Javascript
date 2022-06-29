@@ -9,14 +9,13 @@ function solution(answers) {
         if(first[i % first.length] === answers[i]) count[0]++;
         if(second[i % second.length] === answers[i]) count[1]++;
         if(third[i % third.length] === answers[i]) count[2]++;
-    };
+    }
 
     let max = Math.max(...count);
         for(let k = 0; k < count.length; k++){
             if(count[k] === max){
                 answer.push(k + 1);
-            };
-    };
-
+            }
+    }
     return answer;
 }
