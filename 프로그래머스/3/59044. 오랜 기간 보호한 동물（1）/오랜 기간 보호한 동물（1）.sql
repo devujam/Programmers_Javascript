@@ -1,0 +1,8 @@
+SELECT animalIns.NAME
+  , animalIns.DATETIME
+FROM ANIMAL_INS animalIns
+LEFT JOIN ANIMAL_OUTS animalOuts
+ON animalOuts.ANIMAL_ID =  animalIns.ANIMAL_ID
+WHERE animalOuts.DATETIME IS NULL
+ORDER BY animalIns.DATETIME
+LIMIT 3
