@@ -1,0 +1,6 @@
+SELECT animalOuts.ANIMAL_ID
+  , animalOuts.NAME
+FROM ANIMAL_OUTS animalOuts
+LEFT JOIN ANIMAL_INS animalIns ON animalOuts.ANIMAL_ID = animalIns.ANIMAL_ID
+WHERE animalIns.DATETIME IS NULL
+ORDER BY animalOuts.ANIMAL_ID ASC;
